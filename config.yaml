@@ -1,0 +1,30 @@
+# GTSDB Dataset Configuration for YOLOv8
+# German Traffic Sign Detection Benchmark
+
+path: ./datasets/GTSDB
+train: images/train
+val: images/val
+test: images/test
+
+# Classes based on GTSDB categories
+nc: 4  # Number of classes (simplified for detection)
+names:
+  0: prohibitory    # Speed limits, no entry, etc.
+  1: mandatory      # Turn directions, roundabout
+  2: danger         # Warning signs
+  3: other          # Other traffic signs
+
+# Training configuration
+train_config:
+  epochs: 100
+  batch_size: 16
+  imgsz: 640
+  patience: 20
+  
+# Improved model configuration  
+improved_config:
+  epochs: 100
+  batch_size: 8
+  imgsz: 800  # Higher resolution
+  patience: 25
+  augment: true

@@ -1,0 +1,51 @@
+# Python cache & system files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Datasets & raw downloads
+datasets/
+data/
+*.zip
+
+# Training run scratch folders (curated in results/)
+runs/
+evidence/
+
+# AI report generation scripts & temporary text logs
+create_final_project.py
+generate_complete_report.py
+generate_word_report.py
+doc_analysis.txt
+comparison_report.txt
+teacher_requirements.txt
+TEACHER_PROOF_GUIDE.md
+TEACHER_PROOF_GUIDE_v1.md
+collect_all_proofs.py
+collect_evidence.py
+create_comparisons.py
+create_diagrams.py
+AI introduction(Final Project)(4).docx
+PROJECT_WORK_SUMMARY.md
+
+# Redundant duplicate directories
+Final Project/
+Traffic_Sign_Detection_YOLOv8_Complete/
+final js/
+report/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
